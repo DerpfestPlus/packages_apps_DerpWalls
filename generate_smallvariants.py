@@ -16,7 +16,7 @@ def generate_smallvariants(resource):
 
     for wallpaper in wallpapers:
         # Append _small.jpg to the wallpaper
-        wallpaper_small = wallpaper[:-4] + "_small.png"
+        wallpaper_small = wallpaper.split(".")[0] + "_small.png"
         wallpaper_small_path = wallpapers_path + wallpaper_small
 
         # Save the wallpaper with 1/5 size to wallpaper_small_path
